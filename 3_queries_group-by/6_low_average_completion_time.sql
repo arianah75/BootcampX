@@ -7,4 +7,4 @@ JOIN assignments ON assignment_submissions.assignment_id = assignments.id -- Joi
 WHERE students.end_date IS NULL -- Filter for currently enrolled students (null end_date)
 GROUP BY students.name -- Group the results by student name
 HAVING AVG(assignment_submissions.duration) < AVG(assignments.duration) -- Filter for average completion time less than average suggested completion time
-ORDER BY average_completion_time; -- Order the results by average completion time
+ORDER BY average_completion_time; -- Order the results by average completion time 
